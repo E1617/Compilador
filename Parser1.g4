@@ -4,7 +4,7 @@ options {
     tokenVocab = Lexer1;
 }
 //INICIO DEL PROGRAMA
-program : (declaracion | sentencia | tipoFuncion)+ EOF ;
+program : (declaracion | sentencia | tipoFuncion | llamadaFuncion)+ EOF ;
 //DECLARACIONES (lista de variables y asignaciones)
 declaracion : TIPO (listaId SEMICOLON | asignacion);
 //DECLARACIÓN DE FUNCIONES
