@@ -1,0 +1,3 @@
+int function obtenerValor() {
+    return 5.5;
+}
